@@ -1,0 +1,4 @@
+txtbox 200 200 200 65 Singleton
+box 200 315 200 150
+write 200 285 static_Instance()
+write 200 305 SingletonOperation()

@@ -1,0 +1,21 @@
+mat 100 350 50 100 X,Y
+mat 1160 350 50 100 X',Y'
+
+txtring 300 350 75 RND
+txtbox 640 200 300 50 affine_transformation_01
+txtbox 640 350 300 50 affine_transformation_02
+txtbox 640 520 300 50 affine_transformation_03
+
+arrow 150 350 100 0
+
+arrow 330 310 150 30
+arrow 350 350 120 0
+arrow 330 390 160 -35
+
+arrow 800 200 320 -20
+arrow 800 350 300 0
+arrow 800 520 320 20
+
+ln 1160 420 200 -90
+ln 1160 620 1060 180
+arrow 100 620 200 90
