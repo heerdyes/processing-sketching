@@ -1,0 +1,11 @@
+txtbox 200 300 160 75 human
+txtbox 640 300 460 75 geneui
+txtbox 1080 300 160 75 addsyn
+arrow 280 300 130 0
+arrow 870 300 130 0
+ln 1080 340 100 -90
+ln 1080 440 880 180
+arrow 200 440 100 90
+write 940 280 cfg
+write 340 280 fitness
+write 640 420 feedback

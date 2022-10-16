@@ -1,0 +1,8 @@
+txtbox 200 300 160 75 seed_image
+txtbox 640 300 460 75 MRCM_apply_affine_tranformation_seq
+txtbox 1080 300 160 75 next_image
+arrow 280 300 130 0
+arrow 870 300 130 0
+ln 1080 340 100 -90
+ln 1080 440 880 180
+arrow 200 440 100 90
