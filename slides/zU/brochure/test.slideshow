@@ -1,0 +1,13 @@
+slide 1
+h.image=>img/test.png
+h.text=>create computer music with sonic pi
+b.image=>imagesynth_0002.png
+f.text=>MADE WITH PROCESSING AND SONIC PI
+end
+
+slide 2
+h.image=>img/test.png
+h.text=>perhaps cover a song
+b.image=>imagesynth_0002.png
+f.text=>MADE WITH PROCESSING AND SONIC PI
+end
