@@ -1,0 +1,5 @@
+mkgraph g1 900 900
+mklfo slfo [12 2 0] 0.15 0
+mkbotcfg slfo tlfo
+mkbot b1 1080 1080 c1
+
