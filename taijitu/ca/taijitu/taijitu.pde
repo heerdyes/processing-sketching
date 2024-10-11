@@ -1,5 +1,6 @@
 PGraphics pg;
 color yang=color(23, 202, 232);
+//color yang=color(255, 255, 255);
 color yin=color(0, 0, 0);
 int reclim=6;
 
