@@ -69,7 +69,26 @@ void initscenes() {
     "2 co ppjjdd",
     "2 q h..h..b..d...."
     );
-  scenes[2]=new Scene("0 sy mod_sine");
+  scenes[2]=new Scene(
+    "0 sy mod_sine",
+    "0 o 50",
+    "0 a 0",
+    "0 d 0",
+    "0 s 0",
+    "0 r 4",
+    "0 mw 0",
+    "0 mr c",
+    "0 mp 7",
+    "1 sy mod_dsaw",
+    "1 a 2",
+    "1 r 2",
+    "1 mw 2",
+    "1 mr 2",
+    "1 mp 6",
+    "1 dt 5",
+    "0 q z...z...z...zz..",
+    "1 q z.v.b..m...."
+    );
   scenes[3]=new Scene("0 sy mod_sine");
   scenes[4]=new Scene("0 sy mod_sine");
   scenes[5]=new Scene("0 sy mod_sine");
@@ -78,12 +97,27 @@ void initscenes() {
   scenes[8]=new Scene("0 sy mod_sine");
   scenes[9]=new Scene("0 sy mod_sine");
   scenes[10]=new Scene("0 sy mod_sine");
-  scenes[11]=new Scene("0 sy mod_sine");
+  // last scene is a reset scene
+  String[] autoinst=new String[10*5];
+  int cmdi=0;
+  for (int i=0; i<10; i++) {
+    String sq=String.format("%d q ....", i);
+    String a=String.format("%d a 0", i);
+    String d=String.format("%d d 0", i);
+    String s=String.format("%d s 0", i);
+    String r=String.format("%d r 1", i);
+    autoinst[cmdi++]=sq;
+    autoinst[cmdi++]=a;
+    autoinst[cmdi++]=d;
+    autoinst[cmdi++]=s;
+    autoinst[cmdi++]=r;
+  }
+  scenes[11]=new Scene(autoinst);
 }
 
 void enterscene(int sn) {
   if (sn<0 || sn>=scenes.length) {
-    throw new RuntimeException("kuzakenna! temme!");
+    kl.logln("[ALAS] sn<0 or sn>=scenes.length");
   }
   for (String tmp : scenes[sn].lns) {
     kl.logchs(tmp);

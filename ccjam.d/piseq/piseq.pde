@@ -83,6 +83,20 @@ void keyPressed() {
     enterscene(3);
   } else if (keyCode==com.jogamp.newt.event.KeyEvent.VK_F5) {
     enterscene(4);
+  } else if (keyCode==com.jogamp.newt.event.KeyEvent.VK_F6) {
+    enterscene(5);
+  } else if (keyCode==com.jogamp.newt.event.KeyEvent.VK_F7) {
+    enterscene(6);
+  } else if (keyCode==com.jogamp.newt.event.KeyEvent.VK_F8) {
+    enterscene(7);
+  } else if (keyCode==com.jogamp.newt.event.KeyEvent.VK_F9) {
+    enterscene(8);
+  } else if (keyCode==com.jogamp.newt.event.KeyEvent.VK_F10) {
+    enterscene(9);
+  } else if (keyCode==com.jogamp.newt.event.KeyEvent.VK_F11) {
+    enterscene(10);
+  } else if (keyCode==com.jogamp.newt.event.KeyEvent.VK_F12) {
+    enterscene(11);
   } else if (keyCode==com.jogamp.newt.event.KeyEvent.VK_BACK_SPACE) {
     kl.bksp();
   } else if (keyCode==38) {
