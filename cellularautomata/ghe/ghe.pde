@@ -27,7 +27,7 @@ void main() {
 
   vec3 udu = texture(pstate, uv).rgb;
   float c = udu.r;
-  float z = udu.g;
+  float p = udu.g*0.95;
 
   // neighborhood
   float r = texture(pstate, vec2(uv.x+dx, uv.y)).x;
@@ -59,10 +59,12 @@ void main() {
   float d3 = texture(pstate, vec2(uv.x, uv.y-3.0*dy)).x;
 
   // the equation of life
-  float n = 0.25*c + 0.1*rd2 + 0.4*l - 0.1*l2 + 0.55*u2 + 0.1*l2d - 0.1*r2 - 0.1*d - 0.1*u3;
+  float n = 0.9*c + 0.1*u - p*d3 + p*r3 + p*l - p*ld2;
+
+  if (p<0.001) p=1.0;
 
   // store elevation and velocity
-  fragColor = vec4(clamp(n, 0, 1 ), z, 0.0, 1.0);
+  fragColor = vec4(clamp(n, 0, 1), clamp(p, 0, 1), 0.0, 1.0);
 }
 """};
 
